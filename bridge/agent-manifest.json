@@ -1,0 +1,10 @@
+{
+  "networks": [
+    {
+      "name": "bountyscout"
+    }
+  ],
+  "actions": {
+    "version": 1
+  }
+}

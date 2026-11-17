@@ -1,0 +1,2220 @@
+{
+  "data_as_of": "2026-11-18",
+  "programs": [
+    {
+      "id": "across",
+      "name": "Across",
+      "platform": "email",
+      "submit_route": "bugs@across.to",
+      "submit_route_label": "Email bugs@across.to",
+      "program_url": "https://docs.across.to/introduction/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee stated; email program, no fee/KYC/rep gate per sources"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": false,
+        "notes": "No rep/Signal gate, no KYC, no fee stated"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000",
+        "high": "$10,000",
+        "medium": "$1,000",
+        "low": "$250"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live email program; A-01/A-02/A-03 submitted 12 Nov 2026",
+      "hilmi_outcome": "A-01 closed informational, no reward; A-02 awaiting verdict; A-03 closed informational, no reward",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "uma",
+      "name": "UMA",
+      "platform": "email",
+      "submit_route": "bugs@umaproject.org",
+      "submit_route_label": "Email bugs@umaproject.org",
+      "program_url": "https://docs.uma.xyz/resources/audit-and-bug-bounty-programs",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/KYC/NDA/rep gate stated on program page"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No fee/KYC/NDA/rep gate stated; page references Ethereum Foundation bounty rules (not verified whether they add conditions)"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000",
+        "high": "$10,000",
+        "medium": "$3,000 flat",
+        "low": "$250"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live (page still published, present tense, no closure notice); newest code (ManagedOptimisticOracleV2, DisputeRouter) is in a private repo",
+      "hilmi_outcome": "Skipped 13 Nov 2026 on hilmi's decision — not audited, no scoping email sent",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity",
+        "paid-in-UMA"
+      ]
+    },
+    {
+      "id": "biconomy-nexus",
+      "name": "Biconomy Nexus",
+      "platform": "email",
+      "submit_route": "security@biconomy.io",
+      "submit_route_label": "Email security@biconomy.io (Critical/High); Medium/Low via GitHub issues",
+      "program_url": "https://docs.biconomy.io/contracts-and-audits",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/KYC/NDA stated in SECURITY.md (absence, not an explicit 'free' statement)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No KYC/NDA/fee/SLA/PoC-format stated; local forks only per program rules"
+      },
+      "rewards": {
+        "critical": "up to $50,000",
+        "high": "up to $10,000",
+        "medium": "case-by-case (no fixed amount)",
+        "low": "case-by-case (no fixed amount)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; Nexus 1.2.1 audited 13 Nov 2026",
+      "hilmi_outcome": "Audited 13 Nov 2026, zero submittable; do not re-audit until significant new code",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "safe",
+      "name": "Safe",
+      "platform": "email",
+      "submit_route": "bounty@safefoundation.org",
+      "submit_route_label": "Email bounty@safefoundation.org",
+      "program_url": "https://docs.safefoundation.org/security/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "No fee mentioned on program page (absence only — not verified free)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No KYC/NDA/fee/timeline stated on program page; plain-text email, no attachments/links (auto-reject otherwise)"
+      },
+      "rewards": {
+        "critical": "not listed",
+        "high": "up to $1,000,000",
+        "medium": "up to $50,000",
+        "low": "up to $10,000"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$30,000 (largest documented payout); $1,000 Low example (MultiSend self-destruct, Micah Zoltu)",
+        "source": "Safe docs past-bounties page",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live email-only program; scope Safe Smart Account v1.1.1-1.5.0 + modules + Safenet Staking v0.1.0",
+      "hilmi_outcome": "Audited 13 Nov 2026, zero submittable; do not re-audit until significant new code (v1.6.0 / new singleton / new module / Staking v0.2.0)",
+      "tags": [
+        "email",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "relay",
+      "name": "Relay",
+      "platform": "email",
+      "submit_route": "support@relay.link",
+      "submit_route_label": "Email support@relay.link",
+      "program_url": "https://docs.relay.link/security/bounties",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee on program page or in email flow"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": false,
+        "notes": "KYC + background check + tax docs (W-8BEN/W-9) required BEFORE payout, not to join"
+      },
+      "rewards": {
+        "critical": "$20,000-$100,000 (Severity x Likelihood matrix: S4 Critical L1 $20,000 / L2 $50,000 / L3 $100,000)",
+        "high": "$7,500-$30,000 (S3: L1 $7,500 / L2 $15,000 / L3 $30,000)",
+        "medium": "$2,000-$10,000 (S2: L1 $2,000 / L2 $5,000 / L3 $10,000)",
+        "low": "$500-$2,000 (S1: L1 $500 / L2 $1,000 / L3 $2,000)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No payout proof found; noted risk at selection time",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; payout framework revised ~19 Oct 2026; floor $500, cap $100,000",
+      "hilmi_outcome": "EP-04 Low sent 16 Nov 2026, awaiting verdict (SLA ack 2 business days, initial review 7 days)",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "midas",
+      "name": "Midas",
+      "platform": "email",
+      "submit_route": "security@midas.exchange",
+      "submit_route_label": "Email security@midas.exchange",
+      "program_url": "https://www.midas.exchange/bug-bounty/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/rep gate stated for the email route; separate Sherlock (stake-gated) and Cantina (fee $20 per aggregator, unverified on Cantina page) routes exist with $500,000 max"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": true,
+        "notes": "Verified Midas account required at payout; 24h reporting rule; 90-day disclosure embargo"
+      },
+      "rewards": {
+        "critical": "$10,000-$100,000",
+        "high": "$2,500-$10,000",
+        "medium": "$500-$2,500",
+        "low": "$100-$500"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live email route; AUM ~$411M on-chain",
+      "hilmi_outcome": "FD-01 Medium sent 16 Nov 2026, awaiting verdict (ack <=3 business days, triage ~10 days)",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "morpheus",
+      "name": "Morpheus",
+      "platform": "email",
+      "submit_route": "devs@mor.org",
+      "submit_route_label": "Email devs@mor.org",
+      "program_url": "https://mor.org/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/KYC/NDA stated in program v2 (effective 2026-08-07)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No KYC/NDA/fee stated; payout discretionary, no platform escrow"
+      },
+      "rewards": {
+        "critical": "up to $100,000 (capped at 10% of proven funds at risk)",
+        "high": "$10,000-$50,000",
+        "medium": "$2,500-$10,000",
+        "low": "$500-$2,500"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$15,000 (SessionRouter, High, paid in USDC)",
+        "source": "Morpheus bug bounty page / payout process record",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live (program v2); payout in MOR or other Fund-held assets, USD-denominated",
+      "hilmi_outcome": "Audited 17 Nov 2026, zero submittable; do not re-audit until significant new code",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "stakedao",
+      "name": "Stake DAO",
+      "platform": "Mantis",
+      "submit_route": "https://mantis.inverse.finance/bounties/stakedao/stake-dao",
+      "submit_route_label": "Mantis platform (mantis.inverse.finance) — email reports no longer accepted",
+      "program_url": "https://docs.stakedao.org/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/gate stated on program docs or Mantis; no sign-up form per Mantis"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": false,
+        "notes": "No fee, no rep gate, no 24h rule; KYC not mentioned (paid to wallet in Mantis profile)"
+      },
+      "rewards": {
+        "critical": "up to $100,000",
+        "high": "up to $25,000",
+        "medium": "up to $5,000",
+        "low": "up to $1,000 (discretionary)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "Mantis launched ~13 Oct 2026; no verified payout history found",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live on Mantis; TVL ~$115.6M; response target 5 business days; paid USDC on Ethereum",
+      "hilmi_outcome": "SD-L01 Low submitted 17 Nov 2026 via Mantis (submission id cmwk5wn18001708jon87l9omk, status new), awaiting verdict",
+      "tags": [
+        "mantis",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "gearbox",
+      "name": "Gearbox",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/gearbox/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/gearbox/information/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "Fee $0 verified live in hilmi's Immunefi account 17 Nov 2026 (~11:42 WIB): 1 free report slot available"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No rep/Signal gate stated; KYC required for payout processing; hilmi's Immunefi account UNVERIFIED (blocks submit)"
+      },
+      "rewards": {
+        "critical": "up to $150,000 (min $6,000; 10% of funds at risk)",
+        "high": "up to $6,000 (min $3,000)",
+        "medium": "up to $3,000 (min $1,000)",
+        "low": "$1,000 flat"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$432,400 total paid",
+        "source": "Immunefi Gearbox program page (total paid figure)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 08 Feb 2022, last updated 07 Nov 2026; TVL ~$18.46M",
+      "hilmi_outcome": "Audited 17 Nov 2026, zero submittable; do not re-audit until significant new code",
+      "tags": [
+        "immunefi",
+        "no-fee",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "rigoblock",
+      "name": "Rigoblock",
+      "platform": "email",
+      "submit_route": "security@rigoblock.com",
+      "submit_route_label": "Email security@rigoblock.com",
+      "program_url": "https://docs.rigoblock.com/bug-bounty.md",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/KYC/rep gate stated on program page"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No fee/KYC/rep gate stated; only 18+, non-employee/contractor, not US-sanctioned"
+      },
+      "rewards": {
+        "critical": "up to $10,000 (min $200)",
+        "high": "up to $2,000 (min $150)",
+        "medium": "up to $250 (min $100)",
+        "low": "not listed (no Low tier)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "Deep check mentions Medium payout levels as proven-paid but no named amount/date was found in sources read",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live v4.4.7; dev v4.5.0 not yet deployed (out of scope); 10% of TVL cap binds High/Critical",
+      "hilmi_outcome": "Audited 17 Nov 2026, zero submittable; do not re-audit until significant new code (v4.5.0 live)",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "maple",
+      "name": "Maple",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/maple/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/maple/information/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "Fee $0 verified for first report via live browser wizard 17 Nov 2026 (~01:52 WIB): '1 report every 24 hours — 1 available right now'"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "required-to-join",
+        "deposit_usd": null,
+        "rule_24h": false,
+        "notes": "KYC required for all hunters submitting and wanting a reward (gov photo ID + proof of address <3 months); no 24h rule found on program page; hilmi's account unverified"
+      },
+      "rewards": {
+        "critical": "$50,000-$500,000 (10% of funds at risk)",
+        "high": "$10,000-$25,000",
+        "medium": "$0 (Medium not paid)",
+        "low": "$0 (Low not paid)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No payout proof found anywhere (6 serious searches, zero results)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 25 Jan 2022, last updated 11 Nov 2026; only Critical/High paid; Primacy of Rules",
+      "hilmi_outcome": "Audited 17 Nov 2026, zero submittable; do not re-audit until significant new code",
+      "tags": [
+        "immunefi",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "alchemix",
+      "name": "Alchemix",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/alchemix-1/information/",
+      "submit_route_label": "Immunefi program page (V3, alchemix-1)",
+      "program_url": "https://immunefi.com/bug-bounty/alchemix-1/information/",
+      "fee": {
+        "amount_usd_or_credits": "100 credits",
+        "basis": "per report",
+        "notes": "100 credits (~$100) per report, verified in submit modal 13 Nov 2026 ~19:10 WIB; 3 reports = $300; not mentioned on public page"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No KYC required for payout; no rep gate; paid in USDC on Ethereum/Arbitrum/Optimism by Alchemix DAO; scope 'V3 Contracts'"
+      },
+      "rewards": {
+        "critical": "up to $150,000 (min $20,000; 10% of funds at risk)",
+        "high": "up to $20,000 (min $5,000)",
+        "medium": "$3,000 flat",
+        "low": "$1,000 flat"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "~$300,000 (Critical V3, Jun 2026, at then-$300K ceiling)",
+        "source": "Alchemix deep check / program history",
+        "date": "2026-06"
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live V3 since 26 Feb 2026, last updated 03 Nov 2026; max $150,000 (down from $300,000)",
+      "hilmi_outcome": "3 Medium ready (K-02, S-02, S-01; potential $9,000) — HELD on hilmi's 13 Nov decision 'Tahan dulu, jangan bayar'; nothing submitted",
+      "tags": [
+        "immunefi",
+        "fee-100-credits",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "origin",
+      "name": "Origin",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/originprotocol/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/originprotocol/information/",
+      "fee": {
+        "amount_usd_or_credits": "25 credits",
+        "basis": "per report",
+        "notes": "25 credits (~$25) per report; fee only visible in submit modal (Origin pattern)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC status not stated in sources read; no rep gate stated"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000 (min $50,000 financial / $10,000 non-financial; 10% of directly affected user funds)",
+        "high": "$2,000-$15,000",
+        "medium": "$500-$2,000",
+        "low": "$0 by default (Low not rewarded)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; Origin Protocol (Ethena ARM / OUSD/OETH scope per audit)",
+      "hilmi_outcome": "INV-03 Medium ready ($500-$2,000) — HELD, waiting for a free Immunefi Studio wave; fee not paid, nothing submitted",
+      "tags": [
+        "immunefi",
+        "fee-25-credits",
+        "solidity"
+      ]
+    },
+    {
+      "id": "zksync-era",
+      "name": "ZKsync Era",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/zksyncera/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/zksyncera/information/",
+      "fee": {
+        "amount_usd_or_credits": "50 credits",
+        "basis": "per report",
+        "notes": "50 credits (~$50) per report, verified 17 Nov 2026 ~01:33 WIB; hilmi balance 0 credits; account NOT verified (form blocks submit)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC only at payout; no rep gate / 24h rule; PoC required; audit only narrow new-code-first Solidity (atomic interop v33+v34, live = v31); circuits/prover/vm2/crypto out of scope"
+      },
+      "rewards": {
+        "critical": "$100,000-$300,000",
+        "high": "$10,000-$20,000",
+        "medium": "$2,000 flat",
+        "low": "unknown (Low tier not shown on program page)"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$50,000 USDC to ChainLight (ZK circuit soundness bug, ~$1.9B TVL at risk)",
+        "source": "ZKsync Era deep check",
+        "date": "2023-09"
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 10 Mar 2023, last updated 12 Nov 2026; max $300,000; paid USDC on Ethereum mainnet",
+      "hilmi_outcome": "Deep check done 17 Nov 2026 — decision still open (park vs narrow audit); nothing submitted",
+      "tags": [
+        "immunefi",
+        "fee-50-credits",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "tori",
+      "name": "Tori",
+      "platform": "email",
+      "submit_route": "security@tori.finance",
+      "submit_route_label": "Email security@tori.finance (plain text, no attachments)",
+      "program_url": "https://docs.tori.finance/security/audits",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee, no rep gate; identity + sanctions check only at payout"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No fee/rep gate; KYC (identity + sanctions check) only at payout; SLA ack 24h, initial assessment 10 business days"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000",
+        "high": "$10,000-$50,000",
+        "medium": "$1,000-$10,000",
+        "low": "up to $1,000"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No payout proof found (17 Nov 2026 search — official docs + Pendle/Tori coverage only)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since Jul 2026; TVL ~$77.3M; docs updated 2026-11-11; paid USDC; audits Sherlock Jan 2026 + Nethermind Mar 2026",
+      "hilmi_outcome": "Deep check done 17 Nov 2026 — LAYAK DENGAN SYARAT; audit not started (narrow to new CCIP + PendleYTLock 4.0.0 surface only)",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "curve",
+      "name": "Curve",
+      "platform": "email",
+      "submit_route": "security@curve.finance",
+      "submit_route_label": "Email security@curve.finance",
+      "program_url": "https://docs.curve.finance/user/security/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee, no rep gate, no KYC stated on official docs"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "First reporter only; must be able to verify signature from same address; no fee/rep gate/KYC stated"
+      },
+      "rewards": {
+        "critical": "$250,000 (max — likelihood x severity matrix, High severity / Almost Certain)",
+        "high": "$50,000 (max — Moderate / Almost Certain or High / Possible)",
+        "medium": "$10,000 (max — Low / Almost Certain or Moderate / Possible)",
+        "low": "$1,000 (max — Low / Possible; Unlikely tier $250)"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$250,000 to Marco Croc (Kupia Security) for a reentrancy finding (program maximum)",
+        "source": "Cointelegraph 1 May 2024, sourced from Curve Finance; acknowledged by @CurveFinance",
+        "date": "2024-05"
+      },
+      "scope_language": "Vyper",
+      "status": "live",
+      "status_note": "Live; TVL ~$1.107B (17 Nov 2026); DEX + crvUSD + LlamaLend, 32 chains; payout currency unverified on docs page",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT but Vyper scope, not Solidity; hilmi decision on Vyper pending",
+      "tags": [
+        "email",
+        "no-fee",
+        "vyper",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "liquity-v2",
+      "name": "Liquity V2",
+      "platform": "Cantina",
+      "submit_route": "security@liquity.org",
+      "submit_route_label": "Email security@liquity.org (fallback per Nerite docs) — canonical V2 route is Cantina (URL unverified)",
+      "program_url": "https://docs.liquity.org/v2-documentation/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Cantina fee/deposit for Liquity UNVERIFIED — must be checked on Cantina Liquity page before audit; no fee/rep gate stated in Nerite docs"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Route conflict: Nerite docs list email fallback with PGP; official V2 docs say 'Any submissions should be done via Cantina'. Cantina account required on canonical route; KYC before payout per Cantina Terms"
+      },
+      "rewards": {
+        "critical": "unknown (V2 tiers UNVERIFIED; Critical $5,000-$50,000 + $250,000 pool max figures are from a 2021 V1 blog post — do NOT use as V2 figures)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$1,000 (maximum for its category) to Xiahong (gaoxh06) for TCR calc flaw in batchLiquidateTroves",
+        "source": "GitHub advisory GHSA-xh2p-7p87-fhgh",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "V2 live on Ethereum mainnet since 19 May 2025; TVL ~$69.96M (V2); BOLD ~$33.1M circulating",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT BERAT; route (email vs Cantina) and V2 reward tiers unresolved",
+      "tags": [
+        "cantina",
+        "solidity",
+        "route-conflict",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "magpiexyz",
+      "name": "MagpieXYZ",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/magpiexyz/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/magpiexyz/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — only visible in submit modal"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC not required for payout (verified on page); no rep gate stated; PoC + fix suggestion required for Critical"
+      },
+      "rewards": {
+        "critical": "up to $50,000 (10% of funds at risk; page text also says 'minimum reward USD 50,000 for Critical' — treated as flat ~$50,000 if proven)",
+        "high": "up to $10,000",
+        "medium": "$4,000 flat",
+        "low": "$1,000 flat"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "unknown",
+      "status_note": "Live status UNCERTAIN: aggregator (botnet.com, refresh 5 Nov 2026) records Paused-at 2026-10-27T00:17:10Z, but Immunefi page still loads — must confirm before any audit. Max down from $200,000 to $50,000.",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT BERAT; live status must be confirmed first",
+      "tags": [
+        "immunefi",
+        "solidity",
+        "status-unconfirmed"
+      ]
+    },
+    {
+      "id": "agglayer",
+      "name": "Agglayer",
+      "platform": "Cantina",
+      "submit_route": null,
+      "submit_route_label": "Cantina (program URL not verified in sources)",
+      "program_url": "https://docs.polygon.technology/tools/security/bugbounty",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee $0 claim comes ONLY from aggregator Bounty Radar (Cantina API data, 16 Nov 2026) — NOT verified on the official Cantina page; Cantina programs may require a deposit/fee per program"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Cantina account required; per Cantina Terms participation without KYC is allowed but KYC + tax form required before payout; Agglayer-specific KYC/deposit UNVERIFIED"
+      },
+      "rewards": {
+        "critical": "up to $250,000",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live per Polygon docs (updated 22 Jun 2026); Agglayer smart contracts (Solidity); tiers below Critical unverified; payout currency unverified",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT BERAT; fee $0 claim is aggregator-only",
+      "tags": [
+        "cantina",
+        "solidity"
+      ]
+    },
+    {
+      "id": "inverse-finance",
+      "name": "Inverse Finance",
+      "platform": "Mantis",
+      "submit_route": "https://mantis.inverse.finance/bounties/inversefinance/inverse-finance",
+      "submit_route_label": "Mantis platform — FiRM + DOLA",
+      "program_url": "https://mantis.inverse.finance/bounties/inversefinance/inverse-finance",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/gate stated on Mantis; no sign-up form per Mantis"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No fee/gate stated; KYC not mentioned; coded PoC + run instructions required for all severities"
+      },
+      "rewards": {
+        "critical": "$15,000-$100,000 (10% of funds at risk, min $15,000, max $100,000)",
+        "high": "unknown (High tier truncated in source snippet — not verified)",
+        "medium": "$2,000",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No payout proof found for Mantis route; old Immunefi program payout history not checked as proxy",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live on Mantis; FiRM fixed-rate lending + DOLA stablecoin; paid DOLA on Ethereum, USD-denominated",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT; not deep-checked (High tier unverified)",
+      "tags": [
+        "mantis",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/aave/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/aave/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — only visible in submit modal (Alchemix/Origin pattern); hilmi account 0 credits + UNVERIFIED"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required (for payout); no rep gate; PoC required for all severities; Aave V4 live on Ethereum mainnet 30 Mar 2026 (new surface)"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000 (min $50,000; 10% of affected funds; min $10,000 at risk to count as Critical)",
+        "high": "up to $75,000 (min $10,000)",
+        "medium": "$10,000 flat",
+        "low": "$1,000 flat"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No specific payout proof cited in sweep (program is large/historical payer, but no verified per-report proof in sources)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 18 Oct 2023, last updated 17 Apr 2026; paid AAVE + stablecoin on Ethereum; 65 audits listed",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT; fee must be checked in submit modal before any audit",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "kinetiq",
+      "name": "Kinetiq",
+      "platform": "Cantina",
+      "submit_route": "https://cantina.xyz/bounties/a98129d7-dd15-4c16-b2cb-d8cc42f87de4",
+      "submit_route_label": "Cantina bounty page",
+      "program_url": "https://cantina.xyz/bounties/a98129d7-dd15-4c16-b2cb-d8cc42f87de4",
+      "fee": {
+        "amount_usd_or_credits": 20,
+        "basis": "deposit",
+        "notes": "$20 deposit required to join (program page) — CONFLICT: the audit REPORT.md header says 'Tanpa fee'; the deposit + KYC-to-join record (submission queue, MEMORY) is kept"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "required-to-join",
+        "deposit_usd": 20,
+        "rule_24h": "unknown",
+        "notes": "Deposit $20 to join + KYC 'Required to join'; submit button not visible before login + join"
+      },
+      "rewards": {
+        "critical": "$1,000,000",
+        "high": "$50,000",
+        "medium": "$5,000",
+        "low": "$500"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 15 Sep 2025; kHYPE; payout USDC on Ethereum mainnet",
+      "hilmi_outcome": "K-08 Low ready (max $500, PoC 29/29) — submission SKIPPED 12 Nov 2026 on hilmi's decision ('kalo deposit skip aja'); no deposit paid, nothing submitted",
+      "tags": [
+        "cantina",
+        "deposit-20",
+        "kyc-to-join",
+        "solidity"
+      ]
+    },
+    {
+      "id": "nado",
+      "name": "Nado",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/nado-smart-contracts",
+      "submit_route_label": "HackenProof program page",
+      "program_url": "https://hackenproof.com/programs/nado-smart-contracts",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read (rep gate was the blocker)"
+      },
+      "gates": {
+        "rep_required": 100,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": true,
+        "notes": "Requires 100 reputation (hilmi 0); 24h rule (report within 24h of discovery)"
+      },
+      "rewards": {
+        "critical": "unknown (program scope table shows only 'Smart Contract | Critical' — per-tier amounts not verified in sources)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "finished",
+      "status_note": "Submission window ended ~09:55 WIB 13 Nov 2026 — almost certainly missed; bounty likely forfeited even though findings remain valid",
+      "hilmi_outcome": "NADO-01 + NADO-02 (Medium, PoC 9/9) ready but NEVER submitted — blocked by 100-rep gate, window missed",
+      "tags": [
+        "hackenproof",
+        "rep-100",
+        "solidity"
+      ]
+    },
+    {
+      "id": "dexe",
+      "name": "DeXe",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
+      "submit_route_label": "HackenProof program page",
+      "program_url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
+      "fee": {
+        "amount_usd_or_credits": 5,
+        "basis": "per report",
+        "notes": "$5 submission fee (verified from program page)"
+      },
+      "gates": {
+        "rep_required": 120,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Requires 120 reputation + $5 fee; KYC status not stated in sources read"
+      },
+      "rewards": {
+        "critical": "up to $500,000 (10% of directly affected funds)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$1,000 total paid (344 submissions)",
+        "source": "HackenProof DeXe program page (verified 12 Nov 2026)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; max $500,000; Medium paid in stablecoin, High/Critical paid in $DEXE, Critical with 6-month linear vesting; SphereX rule can downgrade severity by one level",
+      "hilmi_outcome": "F-01 High ready (PoC 3/3 + end-to-end) — BLOCKED by 120 rep + $5 fee; live impact $0 (live DAO pool uses plain ERC721Multiplier)",
+      "tags": [
+        "hackenproof",
+        "rep-120",
+        "fee-5",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "whitechain",
+      "name": "Whitechain Bridge",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/whitechain-bridge",
+      "submit_route_label": "HackenProof program page",
+      "program_url": "https://hackenproof.com/programs/whitechain-bridge",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No submission fee (no fee row in program sidebar)"
+      },
+      "gates": {
+        "rep_required": 50,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": true,
+        "notes": "Requires 50 reputation; 24h rule; Tron scope coverage unverified as in-scope"
+      },
+      "rewards": {
+        "critical": "$2,000-$10,000",
+        "high": "$500-$2,000",
+        "medium": "$300-$500",
+        "low": "$50-$300"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$150 total paid (1,845 submissions)",
+        "source": "HackenProof Whitechain program page (verified 13 Nov 2026)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; max $10,000 (tracker claim of $100,000 is WRONG per live listing); per-tier amounts from brief — tier table on live page was an image whose URL 404s, so tiers are only partially re-verifiable",
+      "hilmi_outcome": "H-01 Low ready (PoC 4/4) — BLOCKED by 50-rep gate + 24h rule; do not submit before (a) Tron scope confirmed, (b) rep near 50",
+      "tags": [
+        "hackenproof",
+        "rep-50",
+        "no-fee",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "cronos-zkevm",
+      "name": "Cronos zkEVM",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/cronos-zkevm-smart-contracts",
+      "submit_route_label": "HackenProof program page",
+      "program_url": "https://hackenproof.com/programs/cronos-zkevm-smart-contracts",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No submission fee (verified live browser)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required; PoC required for all reports; only High/Critical worth submitting (Medium/Low pay $0)"
+      },
+      "rewards": {
+        "critical": "$20,000-$50,000 (plus 'Extreme' tier up to $250,000 + discretionary bonus up to $50,000 per page text)",
+        "high": "$500-$20,000",
+        "medium": "$0 (Medium pays $0)",
+        "low": "$0 (Low pays $0)"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$550 total paid (309 submissions)",
+        "source": "HackenProof Cronos zkEVM program page (read 12 Nov 2026)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 08 Nov 2024, last updated 9 Nov 2026; scope 6 Amply Finance contracts; payout USDC/USDT",
+      "hilmi_outcome": "Audited 12 Nov 2026, zero submittable findings",
+      "tags": [
+        "hackenproof",
+        "no-fee",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "erc-4337",
+      "name": "ERC-4337",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/account-abstraction-bugs",
+      "submit_route_label": "HackenProof program page (Ethereum Foundation 'Account Abstraction Bugs')",
+      "program_url": "https://hackenproof.com/programs/account-abstraction-bugs",
+      "fee": {
+        "amount_usd_or_credits": 7,
+        "basis": "per report",
+        "notes": "$7 per report (verified via live browser check 12 Nov 2026; not visible on text fetch)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No reputation requirement (verified live browser 12 Nov 2026); KYC required if finding is valid, for payment; PoC required"
+      },
+      "rewards": {
+        "critical": "unknown (range $1,000-$250,000 overall; per-severity table NOT verified — program page shows severity definitions only)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "$73,000 total paid (407 submissions) appears in the task brief but was NOT verifiable from the sources read — treated as not found",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; max $250,000; in-scope only 'core' and 'utils' folders of contracts/",
+      "hilmi_outcome": "Audited 12 Nov 2026 — candidate C1 UNPROVEN (PimlicoSimulations filterOps gate unverified); nothing submitted; do not submit yet",
+      "tags": [
+        "hackenproof",
+        "fee-7",
+        "solidity"
+      ]
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "platform": "email",
+      "submit_route": "bugbounty@hyperfoundation.org",
+      "submit_route_label": "Email bugbounty@hyperfoundation.org",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC/KYB mandatory (stage — join vs payout — not verified in sources); chain/node/API scope, NOT pure Solidity"
+      },
+      "rewards": {
+        "critical": "less than $1,000,000 USDC",
+        "high": "less than $50,000",
+        "medium": "less than $10,000",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Web2/API",
+      "status": "live",
+      "status_note": "Live; scope is chain/node/API, not pure Solidity; no official program page URL documented in sources",
+      "hilmi_outcome": "Assessed NOT LAYAK as main focus; not audited",
+      "tags": [
+        "email",
+        "web2-api"
+      ]
+    },
+    {
+      "id": "beanstalk",
+      "name": "Beanstalk",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/beanstalk/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/beanstalk/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "No fee/credit mentioned anywhere on Information page (absence only — not verified free); program is paused so the submit flow could not be checked"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC explicitly NOT required; PoC required for all severities; no Safe Harbor; disputes via binding Immunefi mediation"
+      },
+      "rewards": {
+        "critical": "up to $1,100,000 (min $100,000; 10% of practicable economic damage)",
+        "high": "up to $100,000 (min $10,000)",
+        "medium": "up to $10,000 (min $1,000)",
+        "low": "not listed (no Low tier)"
+      },
+      "payout_proof": {
+        "status": "verified",
+        "amount": "$1,400,000 total paid from 27 reports (median resolution 3 days)",
+        "source": "Immunefi Beanstalk program page",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "paused",
+      "status_note": "PAUSED — do not audit until live again; paid in BEAN on Ethereum via BICM multisig",
+      "hilmi_outcome": "Deep check done; program PAUSED — not audited",
+      "tags": [
+        "immunefi",
+        "paused",
+        "solidity",
+        "payout-verified"
+      ]
+    },
+    {
+      "id": "enzyme",
+      "name": "Enzyme",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/enzyme-onyx/information/",
+      "submit_route_label": "Immunefi program page (Enzyme Onyx)",
+      "program_url": "https://immunefi.com/bug-bounty/enzyme-onyx/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "No fee mentioned anywhere on Information/Scope/Resources pages (absence only — NOT confirmed free; Origin precedent: fee 25 credits only appeared in submit modal)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC explicitly NOT required; no Safe Harbor text confirmed on program page; PoC required"
+      },
+      "rewards": {
+        "critical": "up to $200,000 (min $20,000; 10% of affected funds)",
+        "high": "up to $20,000 (min $5,000)",
+        "medium": "up to $5,000 (min $1,000)",
+        "low": "not listed (no Low tier; Smart Contract only)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "Total paid / report count not shown on program page",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 4 Sep 2025, last updated 12 Nov 2026; paid USDC on Ethereum; Primacy of Impact",
+      "hilmi_outcome": "Audited 12 Nov 2026, zero submittable findings",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "instadapp",
+      "name": "Instadapp",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/instadapp/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/instadapp/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "No fee mentioned anywhere (Information/Scope/Resources/Rules) — absence only, NOT confirmed free (Origin precedent)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC explicitly NOT required; no Safe Harbor/arbitration on program page; paid directly by Instadapp (not Immunefi)"
+      },
+      "rewards": {
+        "critical": "$10,000-$500,000 (10% of directly affected funds, min $10,000)",
+        "high": "$5,000-$100,000 (50% of affected funds value, min $5,000)",
+        "medium": "not listed (no Medium tier — Critical-or-High only)",
+        "low": "not listed (no Low tier)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "Total paid shown as 'Private' on program page",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 20 Sep 2021, last updated 7 Nov 2026; max $500,000; paid USDC/USDT/DAI on Ethereum",
+      "hilmi_outcome": "Audited 13 Nov 2026, zero submittable findings; do not repeat until significant new code (big Fluid update / Avocado v2)",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "metric",
+      "name": "Metric",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/metric/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/metric/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "No fee mentioned on program page (search 'fee' = 0 results, checked 13 Nov 06:38 WIB) — absence only, NOT confirmed free"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC explicitly NOT required; PoC required; Critical needs >=$10K at risk"
+      },
+      "rewards": {
+        "critical": "up to $500,000 (20% of affected funds, min $50,000)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live on Ethereum, BNB Chain, Robinhood Chain; tokenized equities + crypto majors; launched 10 Nov 2026 (newest program in list at audit time)",
+      "hilmi_outcome": "Audited 13 Nov 2026, zero submittable findings (PoC 31/31)",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "usdt0",
+      "name": "USDT0",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/usdt0/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/usdt0/information/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee, no rep gate, no 24h rule (stated in audit REPORT.md)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": false,
+        "notes": "KYC + OFAC required; PoC required; local-fork testing only (mainnet/testnet testing forbidden); payout direct from USDT0 team (wire USD or USDT/USDT0)"
+      },
+      "rewards": {
+        "critical": "up to $6,000,000 (min $50,000; 10% of affected funds)",
+        "high": "not listed (NO High tier)",
+        "medium": "$5,000 flat",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; Lockbox ETH ~$3.44-3.46B verified on-chain; Critical bar is narrow (must affect USDT redemption on Ethereum)",
+      "hilmi_outcome": "Audited 13 Nov 2026, zero submittable findings (PoC 11/11)",
+      "tags": [
+        "immunefi",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "optimism",
+      "name": "Optimism",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/optimism/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/optimism/information/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee, no rep gate (stated in audit REPORT.md)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required for rewards >$50,000; no rep gate; PoC required for all severities"
+      },
+      "rewards": {
+        "critical": "up to $2,000,042 (10% of directly affected funds)",
+        "high": "up to $50,000 (min $15,000)",
+        "medium": "up to $15,000 (min $1,000)",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 14 Jan 2022, last updated 13 Oct 2026; 19 L1 smart-contract assets; U21 verified live on OP Mainnet 17 Nov 2026 (SystemConfig 4.3.0, OptimismPortal2 6.1.0, ETHLockbox 2.0.0, matching op-contracts v9.0.0); U22 final not released (rc.1 only)",
+      "hilmi_outcome": "Audited 12 Nov 2026, zero submittable findings (PoC 75/75); round-2 audit decision still open",
+      "tags": [
+        "immunefi",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "0x",
+      "name": "0x",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/0x/information/",
+      "submit_route_label": "Immunefi program page (0x Settler)",
+      "program_url": "https://immunefi.com/bug-bounty/0x/information/",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No submission fee (stated in audit REPORT.md)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "No rep gate; KYC required for full payout; PoC required; payout USDC on Ethereum"
+      },
+      "rewards": {
+        "critical": "unknown (per-severity tiers not recorded in sources read)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; 0x Settler scope",
+      "hilmi_outcome": "Audited 12 Nov 2026, zero submittable findings (PoC 75/75)",
+      "tags": [
+        "immunefi",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "ticko",
+      "name": "Ticko",
+      "platform": "email",
+      "submit_route": "security@ticko.market",
+      "submit_route_label": "Email security@ticko.market",
+      "program_url": "https://docs.ticko.xyz/resources/ticko-bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC/KYB + sanctions screening required; payout in USDT, weekly batch distribution after review"
+      },
+      "rewards": {
+        "critical": "up to 200,000 USDT",
+        "high": "up to 25,000 USDT",
+        "medium": "up to 3,000 USDT",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Permanent program; report to security@ticko.market; scope includes session-key / trading / mark-price surfaces",
+      "hilmi_outcome": "Audited — zero confirmed findings; nothing sent to security@ticko.market",
+      "tags": [
+        "email",
+        "solidity"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "platform": "other",
+      "submit_route": "psirt@gemini.com",
+      "submit_route_label": "PGP email to psirt@gemini.com (official bug bounty channel)",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC status not stated in sources read; first reporter only is paid; needs hilmi's sandbox account for authenticated testing"
+      },
+      "rewards": {
+        "critical": "$10,000-$20,000",
+        "high": "$1,500-$5,000",
+        "medium": "$350-$500",
+        "low": "$150"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Web2/API",
+      "status": "live",
+      "status_note": "Live; CEX (exchange/sandbox) scope — Web2/API, not smart contracts; no official program page URL documented in sources (only security.txt found)",
+      "hilmi_outcome": "Recon done — 1 Low finding (CSP report-only on exchange.sandbox.gemini.com) likely to be rejected as out-of-scope hardening; nothing submitted; needs sandbox account",
+      "tags": [
+        "email",
+        "web2-api"
+      ]
+    },
+    {
+      "id": "cow",
+      "name": "CoW Protocol",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/cowprotocol/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/cowprotocol/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read (Immunefi modal unverified)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC status not stated in sources read; solver bond $50,000 in stables/ETH + 500,000 COW (ramping) is a protocol mechanism, not a bounty gate"
+      },
+      "rewards": {
+        "critical": "$500,000-$1,000,000 (estimated in audit report for F-01 if treated as new — NOT verified from program page)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; GPv2Settlement scope",
+      "hilmi_outcome": "F-01 (allow-listed solver drains settlement fee buffer) assessed known/accepted risk per CoW docs — do NOT submit; realistic expected reward $0; nothing submitted",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "noirwallet",
+      "name": "NoirWallet",
+      "platform": "HackenProof",
+      "submit_route": null,
+      "submit_route_label": "HackenProof (program page URL not documented in sources)",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": 10,
+        "basis": "per report",
+        "notes": "$10 fee (per MEMORY / scout record)"
+      },
+      "gates": {
+        "rep_required": 50,
+        "signal_required": null,
+        "kyc": "required-to-join",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Rep 50 (hilmi 0) + $10 fee + KYC; scope is Web2/wallet, not Solidity"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": "$0 paid so far",
+        "source": "Scout record 16 Nov 2026",
+        "date": null
+      },
+      "scope_language": "Web2/API",
+      "status": "unknown",
+      "status_note": "Checked 16 Nov 2026: rep 50 + fee $10 + KYC + Web2/wallet scope; $0 paid so far",
+      "hilmi_outcome": "NOT LAYAK — skipped on hilmi's decision; not audited",
+      "tags": [
+        "hackenproof",
+        "rep-50",
+        "fee-10",
+        "web2-api"
+      ]
+    },
+    {
+      "id": "deriv",
+      "name": "Deriv",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Submit route not documented in sources",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not verified in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": 1.0,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Signal >= 1.0 required (new accounts get trial reports only); KYC/fee/rewards not verified in sources"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "unknown",
+      "status": "unknown",
+      "status_note": "Status, platform and route not verified in sources read",
+      "hilmi_outcome": "Side focus only (Signal >= 1.0 required); not audited as main focus",
+      "tags": [
+        "signal-gated"
+      ]
+    },
+    {
+      "id": "okx",
+      "name": "OKX",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Submit route not documented in sources",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not verified in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": 1.0,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Signal >= 1.0 required (new accounts get trial reports only); KYC/fee/rewards not verified in sources"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "unknown",
+      "status": "unknown",
+      "status_note": "Status, platform and route not verified in sources read",
+      "hilmi_outcome": "Side focus only (Signal >= 1.0 required); not audited as main focus",
+      "tags": [
+        "signal-gated"
+      ]
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Submit route not documented in sources",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not verified in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Gate/fee/rewards not verified in sources read"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "unknown",
+      "status": "unknown",
+      "status_note": "Status, platform and route not verified in sources read",
+      "hilmi_outcome": "NOT LAYAK as main focus; not audited",
+      "tags": []
+    },
+    {
+      "id": "msrc",
+      "name": "MSRC (Microsoft)",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Submit route not documented in sources",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not verified in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Gate/fee/rewards not verified in sources read"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Web2/API",
+      "status": "unknown",
+      "status_note": "Status, platform and route not verified in sources read",
+      "hilmi_outcome": "NOT LAYAK as main focus; not audited",
+      "tags": [
+        "web2-api"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Submit route not documented in sources",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not verified in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Gate/fee/rewards not verified in sources read"
+      },
+      "rewards": {
+        "critical": "unknown",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Web2/API",
+      "status": "unknown",
+      "status_note": "Status, platform and route not verified in sources read",
+      "hilmi_outcome": "NOT LAYAK as main focus; not audited",
+      "tags": [
+        "web2-api"
+      ]
+    },
+    {
+      "id": "saabfi",
+      "name": "SaabFi",
+      "platform": "email",
+      "submit_route": "security@saabfi.com",
+      "submit_route_label": "Email security@saabfi.com",
+      "program_url": "https://docs.saabfi.com/bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/rep gate stated on program docs"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required before payout (sanctions screening); PoC required (Foundry test vs local Base mainnet fork); first response 3 business days, triage ~7 days, payout target 30 days after acceptance + KYC"
+      },
+      "rewards": {
+        "critical": "1,000 USDC",
+        "high": "400 USDC",
+        "medium": "200 USDC",
+        "low": "$0 (Low/Informational not paid)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; 'Small Loans' on Base (USDC loans 1-1,000, collateral cbBTC); formal verification by Certora, Echidna/Medusa fuzzing; Safe Harbor: yes",
+      "hilmi_outcome": "Scouted 17 Nov 2026 — LAYAK DENGAN SYARAT but ceiling only $1,000 Critical; last-resort candidate only",
+      "tags": [
+        "email",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "twyne",
+      "name": "Twyne",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/twyne/information/",
+      "submit_route_label": "Immunefi program page",
+      "program_url": "https://immunefi.com/bug-bounty/twyne/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — not mentioned on program page; only visible in submit modal"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC NOT required (stated on page); no rep gate (Immunefi); PoC required for all severities"
+      },
+      "rewards": {
+        "critical": "up to $50,000 (min $10,000; 10% of affected funds)",
+        "high": "up to $10,000 (min $3,000)",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No public payout proof found (new protocol)",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 16 Jan 2026, last updated 16 Nov 2026 (same day as scout); known issues published on program page; 1 audit at launch (~10 months ago)",
+      "hilmi_outcome": "Scouted 16 Nov 2026 (top pick) — REJECTED by hilmi 17 Nov 08:31 WIB; do not re-propose without new facts",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "1inch",
+      "name": "1inch",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/1inch-SmartContracts/information/",
+      "submit_route_label": "Immunefi program page (Smart Contracts)",
+      "program_url": "https://immunefi.com/bug-bounty/1inch-SmartContracts/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — not mentioned on program page; only visible in submit modal"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": true,
+        "notes": "KYC required (for payout); no rep gate; 24h rule: findings must be reported within 24h of discovery; PoC required for all severities; separate HackenProof $500K program exists — use ONE platform only (Immunefi)"
+      },
+      "rewards": {
+        "critical": "up to $500,000 (min $30,000; 10% of affected funds)",
+        "high": "up to $30,000 (min $10,000)",
+        "medium": "up to $10,000 (min $2,000)",
+        "low": "up to $2,000 (min $100)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No specific payout proof verified from public sources in scout",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 11 Jun 2026, last updated 11 Nov 2026; scope 8 assets, all added 14 Oct 2026 (Limit Order Protocol, Settlement, Token-plugins, Farming, Delegating, Cross-chain Swap + 2 Solana assets out of scope for Solidity team); audited by 11 firms",
+      "hilmi_outcome": "Scouted 16 Nov 2026 — REJECTED by hilmi 17 Nov 08:31 WIB; do not re-propose without new facts",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "platform": "Immunefi",
+      "submit_route": "https://immunefi.com/bug-bounty/sparklend/information/",
+      "submit_route_label": "Immunefi program page (SparkLend)",
+      "program_url": "https://immunefi.com/bug-bounty/sparklend/information/",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — only visible in submit modal"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC NOT required; no rep gate; PoC required for Critical/High; 386 assets in scope"
+      },
+      "rewards": {
+        "critical": "up to $5,000,000 (Critical min $50,000; 10% of affected funds)",
+        "high": "up to $100,000 (min $10,000)",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": "No specific payout proof verified; payout via MakerDAO governance vote (executive spell, on-chain, public) — most transparent payout mechanism in the list, up to 1 calendar month after approval",
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 1 Nov 2023, last updated 13 Nov 2026; paid DAI on Ethereum; MakerDAO lineage — most mature/audited codebase in DeFi, lowest expected hit rate",
+      "hilmi_outcome": "Scouted 16 Nov 2026 as runner-up; not pursued (hit rate expected lowest)",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "bankr",
+      "name": "Bankr",
+      "platform": "other",
+      "submit_route": null,
+      "submit_route_label": "Reports ONLY via Bankr Help Center form (email reports are NOT reviewed; email only for Critical alerts)",
+      "program_url": "https://docs.bankr.bot/security/Bankr-Bug-Bounty-Policy.pdf",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Identity verification via ZKPassport required before payout (passport/ID scan + selfie on phone); rewards discretionary/ex gratia — policy states 'Nothing in this Policy obligates Bankr to pay'"
+      },
+      "rewards": {
+        "critical": "$10,000-$50,000+",
+        "high": "$2,500-$10,000",
+        "medium": "$500-$2,500",
+        "low": "$100-$500"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "mixed",
+      "status": "live",
+      "status_note": "Policy v1.7 effective 30 Oct 2026; paid USDC on Ethereum/Base; smart-contract scope is small (3-4 contracts: BankrOrders, FeeRouterV2, BNKR staking); most scope is agent/wallet/LLM (Web2)",
+      "hilmi_outcome": "Scouted 16 Nov 2026 as runner-up; not pursued (discretionary rewards + Help Center only + ZKPassport ID check)",
+      "tags": [
+        "help-center",
+        "mixed"
+      ]
+    },
+    {
+      "id": "lit-protocol",
+      "name": "Lit Protocol",
+      "platform": "email",
+      "submit_route": "security@litprotocol.com",
+      "submit_route_label": "Email security@litprotocol.com",
+      "program_url": "https://developer.litprotocol.com/architecture/verification/bug-bounty",
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/rep gate stated"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "Identity/tax info 'may be requested' before payout; PoC required and strict (must be runnable/replayable; screenshots/video alone are not a PoC); ack 3 business days, triage 7 days"
+      },
+      "rewards": {
+        "critical": "unknown (no reward table — 'sized by severity and real-world impact', fully discretionary; only Medium+ paid, Low/Info unpaid)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown (Low/Info unpaid)"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "mixed",
+      "status": "live",
+      "status_note": "Live (updated 13 Oct 2026); scope mostly TEE/API server — Solidity only a small part (account/permission model + attestation-governance on Base)",
+      "hilmi_outcome": "Scouted 16 Nov 2026 as runner-up; not pursued (reward table does not exist)",
+      "tags": [
+        "email",
+        "no-fee",
+        "mixed"
+      ]
+    },
+    {
+      "id": "capyfi",
+      "name": "CapyFi",
+      "platform": "Immunefi",
+      "submit_route": null,
+      "submit_route_label": "Immunefi (program page URL not verified in sources — not guessed)",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee UNVERIFIED — only visible in submit modal"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required; no rep gate stated; PoC required"
+      },
+      "rewards": {
+        "critical": "up to $1,000,000 (Critical min $50,000)",
+        "high": "unknown",
+        "medium": "$5,001-$10,000",
+        "low": "$1,000-$5,000"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live since 19 Nov 2025, last updated 18 Sep 2026; Compound v2 fork lending on Ethereum; audits Coinspect + OpenZeppelin (Jul 2025)",
+      "hilmi_outcome": "Scouted 17 Nov 2026 as Immunefi reserve (if Aave is fee-blocked); check fee before audit",
+      "tags": [
+        "immunefi",
+        "solidity"
+      ]
+    },
+    {
+      "id": "monolith",
+      "name": "Monolith",
+      "platform": "Mantis",
+      "submit_route": null,
+      "submit_route_label": "Mantis (bounty page URL not verified in sources — not guessed)",
+      "program_url": null,
+      "fee": {
+        "amount_usd_or_credits": 0,
+        "basis": "per report",
+        "notes": "No fee/gate stated in sources read (Mantis pattern: no sign-up form, teams pay hunter wallet directly)"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "none",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC/fee not stated in sources read"
+      },
+      "rewards": {
+        "critical": "$5,000-$20,000 (max 20,000 DOLA)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live on Mantis; permissionless stablecoin factory, ERC20 collateral + Chainlink; third Mantis program (with Stake DAO + Inverse Finance)",
+      "hilmi_outcome": "Noted 17 Nov 2026 as Mantis reserve; not deep-checked",
+      "tags": [
+        "mantis",
+        "no-fee",
+        "solidity"
+      ]
+    },
+    {
+      "id": "cronos",
+      "name": "Cronos",
+      "platform": "HackenProof",
+      "submit_route": "https://hackenproof.com/programs/cronos-smart-contracts",
+      "submit_route_label": "HackenProof program page",
+      "program_url": "https://hackenproof.com/programs/cronos-smart-contracts",
+      "fee": {
+        "amount_usd_or_credits": null,
+        "basis": "per report",
+        "notes": "Fee not stated in sources read"
+      },
+      "gates": {
+        "rep_required": null,
+        "signal_required": null,
+        "kyc": "payout-only",
+        "deposit_usd": null,
+        "rule_24h": "unknown",
+        "notes": "KYC required; PoC required; exploit must be in 1 transaction; financial value in PoC max $300 (excluding flash loans)"
+      },
+      "rewards": {
+        "critical": "up to $250,000 (10% of economic damage; +$50,000 discretionary bonus for 'particularly ingenious' findings)",
+        "high": "unknown",
+        "medium": "unknown",
+        "low": "unknown"
+      },
+      "payout_proof": {
+        "status": "not_found",
+        "amount": null,
+        "source": null,
+        "date": null
+      },
+      "scope_language": "Solidity",
+      "status": "live",
+      "status_note": "Live; scope VVS Swap Core/Periphery (near-pure Uniswap V2 fork), VVS Factory/Router/Token/Workbench/Craftsman; payout USDC/USDT",
+      "hilmi_outcome": "Audited 12 Nov 2026 — F-01 out of scope + known attack class; zero submittable findings",
+      "tags": [
+        "hackenproof",
+        "solidity"
+      ]
+    }
+  ],
+  "notes": "Curated 2026-11-18 from hilmi's own records only: ~/MEMORY.md, submission-queue-2026-11-12.md, bug-bounty-scout-2026-11-16.md, bug-bounty-scout-newsletter-2026-11-16.md, bug-bounty-scout-email-2026-11-17.md, bug-bounty-scout-email-2026-11-17-part2.md, bounty-shortlist-2026-11-12.md, bounty-shortlist-2026-11-13.md, bounty-shortlist-immunefi-2026-11-13.md, and the DEEP-CHECK.md / REPORT.md files under ~/workspace/<program>-audit/. No figure was invented: any fee, reward tier, gate, or payout not verified in those sources is null or 'unknown' (see CURATION.md for the full unverified list). Immunefi submit-modal fees are only visible after login, so several Immunefi fees are unverified by design. 'No fee stated on the page' (absence) is NOT treated as proof of free unless a source explicitly verified $0. KYC 'none' means 'not stated on the program page', not a guarantee. program_url is the official program/docs page the live-check tool should fetch; null means no official page URL was documented in the sources (never guessed). Rewards are ceilings/maxima ('up to') unless marked flat/min — they are not promised amounts. hilmi_outcome records what actually happened for hilmi (submitted / held / skipped / audited with zero submittable), not a recommendation."
+}

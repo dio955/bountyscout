@@ -1,0 +1,18 @@
+{
+  "exports": [
+    {
+      "aliases": [
+        "bountyscout",
+        "bounty_scout_coordinator"
+      ],
+      "front_man": "bounty_scout_coordinator",
+      "network": "bountyscout",
+      "url": "bountyscout"
+    }
+  ],
+  "imports": [],
+  "link_updates": {
+    "mode": "browser-local"
+  },
+  "protocol": "nsdeploy-link/v1"
+}

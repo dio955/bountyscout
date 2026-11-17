@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BountyScout — describe your hunter profile and find bug-bounty programs you can actually join, with their fee, gate and payout proof checked first.">
+    <title>BountyScout — Find a bug bounty you can actually join</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="site.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#">Bounty<span>Scout</span></a>
+      <nav aria-label="Main navigation"><a href="#finder">Finder</a><a href="#results">Programs</a><a href="#assistant">Assistant</a></nav>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="welcome">
+        <p class="eyebrow">Curated program data · No fee surprises · Payout proof checked</p>
+        <h1 id="welcome">Find a bug bounty you can actually join</h1>
+        <p>Describe your hunter profile and BountyScout matches it against a curated list of bug-bounty programs — fee, reputation gate, KYC and payout proof first, so you never waste a submission on a program you cannot enter or that never paid anyone.</p>
+        <p class="disclaimer"><strong>Data as of 18 November 2026.</strong> Fees, gates and program status change — always re-check the program's official page before submitting. A match here is not a guarantee of reward.</p>
+      </section>
+
+      <section id="finder" aria-labelledby="finder-heading">
+        <h2 id="finder-heading">Your hunter profile</h2>
+        <form id="profile-form">
+          <label for="profile-rep">HackenProof reputation (0 if none)</label>
+          <input id="profile-rep" name="profileRep" type="number" min="0" step="1" value="0">
+          <label for="profile-signal">HackerOne Signal (0 if none)</label>
+          <input id="profile-signal" name="profileSignal" type="number" min="0" step="0.1" value="0">
+          <label for="profile-fee">Most you will pay to submit</label>
+          <select id="profile-fee" name="profileFee">
+            <option value="0" selected>No fee only ($0)</option>
+            <option value="25">Up to $25</option>
+            <option value="100">Up to $100</option>
+            <option value="1000000">Any fee</option>
+          </select>
+          <label for="profile-language">Scope language</label>
+          <select id="profile-language" name="profileLanguage">
+            <option value="Solidity" selected>Solidity</option>
+            <option value="Vyper">Vyper</option>
+            <option value="any">Any language</option>
+          </select>
+          <label for="profile-platform">Platform</label>
+          <select id="profile-platform" name="profilePlatform">
+            <option value="any" selected>Any platform</option>
+            <option value="email">Email (self-hosted)</option>
+            <option value="Immunefi">Immunefi</option>
+            <option value="HackenProof">HackenProof</option>
+            <option value="Mantis">Mantis</option>
+            <option value="Cantina">Cantina</option>
+          </select>
+          <label class="check"><input id="profile-payout" name="profilePayout" type="checkbox"> Only programs with verified payout proof</label>
+          <button id="find-button" type="submit">Find programs</button>
+          <p id="find-status" role="status"></p>
+        </form>
+        <p>Try a profile:
+          <button type="button" data-sample-profile="zero">Rep 0, no fee, Solidity</button>
+          <button type="button" data-sample-profile="paid">Rep 0, up to $100, Solidity</button>
+          <button type="button" data-sample-profile="vyper">Rep 0, no fee, Vyper</button>
+        </p>
+        <p class="demo-note">The dataset is a static file in this site (<a href="programs.json">programs.json</a>) curated from public program pages and audit notes. The assistant answers only from that file and from live checks it runs in your browser — never from model memory.</p>
+      </section>
+
+      <section id="results" aria-labelledby="results-heading">
+        <h2 id="results-heading">Matching programs</h2>
+        <p id="results-empty">No search yet — fill in your profile above, or ask the assistant below.</p>
+        <ul id="results-list"></ul>
+        <p id="results-note" class="demo-note"></p>
+      </section>
+
+      <section id="program-card" class="card" aria-labelledby="card-heading" hidden>
+        <h2 id="card-heading">Program details</h2>
+        <dl>
+          <dt>Program</dt><dd id="detail-name">—</dd>
+          <dt>Platform / submit route</dt><dd id="detail-route">—</dd>
+          <dt>Fee</dt><dd id="detail-fee">—</dd>
+          <dt>Gates</dt><dd id="detail-gates">—</dd>
+          <dt>Rewards</dt><dd id="detail-rewards">—</dd>
+          <dt>Payout proof</dt><dd id="detail-payout">—</dd>
+          <dt>Status</dt><dd id="detail-status">—</dd>
+          <dt>Scope</dt><dd id="detail-scope">—</dd>
+          <dt>Live check</dt><dd id="detail-live">Not checked yet — use the button below or ask the assistant.</dd>
+        </dl>
+        <p><button id="live-check-button" type="button">Check if this program is still live</button></p>
+        <p id="live-check-status" role="status"></p>
+        <p class="disclaimer"><strong>Re-check the official page before submitting.</strong> A match here is not a guarantee of reward.</p>
+      </section>
+
+      <section id="assistant" class="assistant" aria-labelledby="assistant-heading">
+        <h2 id="assistant-heading">Ask BountyScout</h2>
+        <p>Ask the assistant about programs for your profile — for example, which programs take a hunter with 0 reputation and no fee, what the Alchemix submission fee is, or whether the Maple program is still live. It reads the same curated dataset as the finder above, and can live-check a program's official page.</p>
+        <p>It can also ask <a href="https://dio955.github.io/contractscope/">ContractScope</a> to check a contract's safety for you — that call goes to the ContractScope site only after you agree on a card.</p>
+        <p class="assistant-note">Your messages and this page's data go to the LLM provider you choose in the settings below. This site never submits a report, creates an account, or pays anything for you.</p>
+        <p id="assistant-status" role="status">Connecting the assistant… If this message stays, the assistant could not load. You can still use the page directly.</p>
+        <div id="agent-app">
+          <div data-ns-slot="header"></div>
+          <div class="assistant-panels">
+            <div data-ns-slot="chat"></div>
+            <div data-ns-slot="agents"></div>
+          </div>
+          <div data-ns-slot="settings"></div>
+        </div>
+      </section>
+    </main>
+    <footer>BountyScout · A demo for the Open Agentic Web Challenge · Data as of 18 November 2026 — always re-check the official program page before submitting.</footer>
+  </body>
+</html>
